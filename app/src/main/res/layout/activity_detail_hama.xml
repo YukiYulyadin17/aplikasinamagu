@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context="com.skripsi.aplikasinamagu.DetailActivityHama">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:elevation="4dp"
+                        android:id="@+id/cardView">
+
+                        <ImageView
+                            android:id="@+id/imageViewHama"
+                            android:layout_width="300dp"
+                            android:layout_height="300dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/upload_image"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardViewDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:layout_below="@+id/cardView"
+                        android:layout_alignParentBottom="true"
+                        app:cardBackgroundColor="#000000"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/judulnamahama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Nama Hama :"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/namahama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/judulnamahama"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/juduldetailhama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_below="@+id/namahama"
+                                android:layout_marginTop="20dp"
+                                android:text="Detail Hama :"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/detailhama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/juduldetailhama"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="20dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/judulbentukhama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_below="@+id/detailhama"
+                                android:layout_marginTop="20dp"
+                                android:text="Bentuk Hama :"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/bentukhama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/judulbentukhama"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="20dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/judulsiklushidup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_below="@+id/bentukhama"
+                                android:layout_marginTop="20dp"
+                                android:text="Siklus Hidup :"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/siklushidup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/judulsiklushidup"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="20dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFF"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="50dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_menu" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

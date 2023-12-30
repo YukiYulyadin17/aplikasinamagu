@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/splash_gradient.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/merah_tua" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:startColor="@color/merah_muda"
+                android:centerColor="@color/merah_muda"
+                android:endColor="@color/merah_tua"
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:gradientRadius="0.5" />
+        </shape>
+    </item>
+</layer-list>

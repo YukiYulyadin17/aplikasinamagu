@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/house"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/shorts"
+        android:title="Profil"
+        android:icon="@drawable/ic_person"
+        />
+
+    <item
+        android:id="@+id/subscriptions"
+        android:title="About"
+        android:icon="@drawable/baseline_info_24" />
+    <item
+        android:id="@+id/library"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout" />
+
+</menu>
